@@ -1,0 +1,340 @@
+/* ===== CONTACT PAGE — LUXURY DESIGN ===== */
+
+.contact-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  overflow: hidden;
+}
+
+.contact-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin: 16px 0 24px;
+  line-height: 1.05;
+  background: linear-gradient(135deg, var(--text) 0%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-hero-sub {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  line-height: 1.9;
+  font-weight: 300;
+}
+
+/* ===== CONTACT GRID ===== */
+.contact-section {
+  padding: 0 0 var(--section-pad);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  margin-bottom: 96px;
+  background: var(--border-subtle);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.contact-card {
+  background: var(--bg-card);
+  padding: 48px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.5s var(--ease-luxury);
+}
+
+.contact-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold-gradient);
+  transform: scaleX(0);
+  transition: transform 0.6s var(--ease-smooth);
+}
+
+.contact-card:hover {
+  background: var(--bg-card-hover);
+}
+
+.contact-card:hover::after {
+  transform: scaleX(1);
+}
+
+.contact-card--primary {
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(212, 175, 55, 0.06) 100%);
+}
+
+.contact-card-glow {
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.contact-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  background: var(--gold-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+
+.contact-card-icon--linkedin {
+  background: rgba(10, 102, 194, 0.1);
+  color: #0a66c2;
+}
+
+.contact-card-icon--email {
+  background: rgba(234, 67, 53, 0.08);
+  color: #ea4335;
+}
+
+.contact-card h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+  flex: 1;
+  font-weight: 300;
+}
+
+/* ===== BUTTONS ===== */
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.4s var(--ease-luxury);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-btn--gold {
+  background: var(--gold);
+  color: var(--bg-deep);
+}
+
+.contact-btn--gold:hover {
+  background: var(--gold-light);
+  box-shadow: 0 8px 40px rgba(212, 175, 55, 0.25);
+}
+
+.contact-btn--linkedin {
+  background: #0a66c2;
+  color: white;
+}
+
+.contact-btn--linkedin:hover {
+  background: #0b7ad5;
+  box-shadow: 0 8px 40px rgba(10, 102, 194, 0.25);
+}
+
+.contact-btn--outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+.contact-btn--outline:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  background: var(--gold-glow);
+}
+
+.contact-card-note {
+  display: block;
+  margin-top: 16px;
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* ===== QR BUSINESS CARD ===== */
+.qr-section {
+  padding-top: 20px;
+}
+
+.qr-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 56px;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.qr-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gold-gradient);
+}
+
+.qr-card-left {
+  flex: 1;
+}
+
+.qr-card-left h3 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.qr-card-left p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+.qr-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.qr-detail {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.qr-detail svg {
+  color: var(--gold);
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.qr-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+#qrCanvas {
+  border-radius: 4px;
+  background: white;
+  padding: 16px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+}
+
+.qr-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s var(--ease-luxury);
+}
+
+.qr-download-btn:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  color: var(--gold);
+  background: var(--gold-glow);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-card--primary {
+    grid-column: 1 / -1;
+  }
+  .qr-card {
+    gap: 48px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+  .qr-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 36px;
+    padding: 36px 24px;
+  }
+  .qr-details {
+    align-items: center;
+  }
+  .contact-hero {
+    padding: 140px 0 64px;
+  }
+}

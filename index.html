@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fahad | Personal Memoir</title>
+  <meta name="description" content="Fahad - Houston raised, University of Houston alumnus, powerlifter, and builder. A personal memoir and digital business card.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>F</text></svg>">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader">
+    <div class="loader-logo">F.</div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">F.</a>
+      <div class="nav-links">
+        <a href="#biography" class="nav-link" data-section="biography">Biography</a>
+        <a href="#powerlifting" class="nav-link" data-section="powerlifting">Powerlifting</a>
+        <a href="#growth" class="nav-link" data-section="growth">Growth</a>
+        <a href="contact.html" class="nav-link nav-link--contact">Contact Me</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#biography" class="mobile-link">Biography</a>
+    <a href="#powerlifting" class="mobile-link">Powerlifting</a>
+    <a href="#growth" class="mobile-link">Growth</a>
+    <a href="contact.html" class="mobile-link mobile-link--contact">Contact Me</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grain"></div>
+      <div class="hero-gradient"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-label">Personal Memoir</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Fahad</span>
+      </h1>
+      <p class="hero-subtitle">Houston Raised. Iron Forged. Purpose Driven.</p>
+      <div class="hero-meta">
+        <span class="hero-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Houston, Texas
+        </span>
+        <span class="hero-meta-divider"></span>
+        <span class="hero-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+          University of Houston
+        </span>
+        <span class="hero-meta-divider"></span>
+        <span class="hero-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+          Powerlifter
+        </span>
+      </div>
+      <a href="#biography" class="hero-scroll">
+        <span>Scroll to explore</span>
+        <div class="hero-scroll-line"></div>
+      </a>
+    </div>
+    <!-- Ambient Light Orbs -->
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-orb hero-orb--3"></div>
+  </section>
+
+  <!-- Biography Section -->
+  <section class="section" id="biography">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">Biography</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="bio-grid">
+        <div class="bio-portrait">
+          <div class="bio-portrait-frame">
+            <img src="assets/profile-photo.jpeg" alt="Fahad portrait" class="bio-portrait-img" />
+          </div>
+          <div class="bio-portrait-accent"></div>
+        </div>
+        <div class="bio-text">
+          <p class="bio-lead">
+            Born and raised in <strong>Houston, Texas</strong> &mdash; a city that teaches you
+            grit before it teaches you anything else. The humidity, the hustle, the culture &mdash;
+            it all shaped who I am.
+          </p>
+          <p>
+            Growing up in Houston meant growing up at the intersection of ambition and diversity.
+            From the sprawling energy corridors to the tight-knit neighborhoods, every corner of
+            this city left its mark. It's where I learned that hard work isn't something you talk
+            about &mdash; it's something you live.
+          </p>
+          <p>
+            Houston didn't just raise me. It built the foundation for everything that came after:
+            the discipline I found in the gym, the curiosity that drove me through college, and
+            the relentless drive to build something meaningful.
+          </p>
+          <div class="bio-quote">
+            <blockquote>
+              "The iron never lies to you. Two hundred pounds is always two hundred pounds."
+            </blockquote>
+            <cite>&mdash; Henry Rollins</cite>
+          </div>
+        </div>
+      </div>
+
+      <!-- Biography Media Gallery -->
+      <div class="media-gallery">
+        <h3 class="media-gallery-title">Moments That Matter</h3>
+        <div class="media-grid">
+          <div class="media-item" data-lightbox="assets/houston-1.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: houston-1.jpg</span>
+            </div>
+            <div class="media-caption"><strong>Houston Skyline</strong>The city that built the foundation</div>
+          </div>
+          <div class="media-item" data-lightbox="assets/childhood-1.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: childhood-1.jpg</span>
+            </div>
+            <div class="media-caption"><strong>Early Days</strong>Where it all started</div>
+          </div>
+          <div class="media-item" data-lightbox="assets/graduation.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: graduation.jpg</span>
+            </div>
+            <div class="media-caption"><strong>University of Houston</strong>Go Coogs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Powerlifting Section -->
+  <section class="section section--dark" id="powerlifting">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Powerlifting</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-intro">
+        Powerlifting isn't just a sport &mdash; it's a philosophy. Every rep is a negotiation with
+        your limits. Every PR is proof that yesterday's impossible is today's warm-up.
+      </p>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="10" width="3" height="4" rx="1"/><rect x="19" y="10" width="3" height="4" rx="1"/><rect x="5" y="8" width="3" height="8" rx="1"/><rect x="16" y="8" width="3" height="8" rx="1"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <div class="stat-value" data-target="405">0</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Squat PR</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="10" width="3" height="4" rx="1"/><rect x="19" y="10" width="3" height="4" rx="1"/><rect x="5" y="8" width="3" height="8" rx="1"/><rect x="16" y="8" width="3" height="8" rx="1"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <div class="stat-value" data-target="315">0</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Bench PR</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="10" width="3" height="4" rx="1"/><rect x="19" y="10" width="3" height="4" rx="1"/><rect x="5" y="8" width="3" height="8" rx="1"/><rect x="16" y="8" width="3" height="8" rx="1"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+          </div>
+          <div class="stat-value" data-target="500">0</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Deadlift PR</div>
+        </div>
+        <div class="stat-card stat-card--total">
+          <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="stat-value" data-target="1220">0</div>
+          <div class="stat-unit">lbs</div>
+          <div class="stat-label">Competition Total</div>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="timeline">
+        <h3 class="timeline-title">The Journey</h3>
+        <div class="timeline-track">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Year 1</span>
+              <h4>First Steps</h4>
+              <p>Walked into the gym with nothing but curiosity and a chip on my shoulder. Started learning the big three: squat, bench, deadlift.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Year 2</span>
+              <h4>Finding the Platform</h4>
+              <p>Entered my first competition. The nerves, the adrenaline, the community &mdash; I was hooked. Started training with purpose and programming.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Year 3</span>
+              <h4>Breaking Through</h4>
+              <p>Hit milestone PRs across all three lifts. Learned that strength isn't just physical &mdash; it's the mental game that separates good from great.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-year">Present</span>
+              <h4>The Ongoing Pursuit</h4>
+              <p>Still chasing numbers, still pushing limits. The barbell remains the most honest mirror I've ever looked into.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Philosophy -->
+      <div class="pl-philosophy">
+        <div class="pl-philosophy-card">
+          <h4>Discipline Over Motivation</h4>
+          <p>Motivation gets you to the gym once. Discipline gets you there every day at 5 AM when it's cold, dark, and your body is screaming for rest.</p>
+        </div>
+        <div class="pl-philosophy-card">
+          <h4>Trust the Process</h4>
+          <p>PRs don't happen overnight. They're built in the monotony of consistent training, proper nutrition, and showing up when nobody's watching.</p>
+        </div>
+        <div class="pl-philosophy-card">
+          <h4>Iron Sharpens Iron</h4>
+          <p>The powerlifting community is built on lifting each other up &mdash; literally and figuratively. Your training partners become your family.</p>
+        </div>
+      </div>
+
+      <!-- Powerlifting Media Gallery -->
+      <div class="media-gallery">
+        <h3 class="media-gallery-title">Proof Is in the Platform</h3>
+        <div class="media-grid">
+          <div class="media-item" data-lightbox="assets/squat-pr.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: squat-pr.jpg</span>
+            </div>
+            <div class="media-caption"><strong>Squat PR Day</strong>Nothing beats the feeling of a grind you didn't quit on</div>
+          </div>
+          <div class="media-item" data-lightbox="assets/comp-day.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: comp-day.jpg</span>
+            </div>
+            <div class="media-caption"><strong>Competition Day</strong>The platform is where preparation meets execution</div>
+          </div>
+          <div class="media-item" data-lightbox="assets/training.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: training.jpg</span>
+            </div>
+            <div class="media-caption"><strong>In the Trenches</strong>5 AM sessions that nobody sees</div>
+          </div>
+          <div class="media-item" data-lightbox="assets/deadlift-pr.jpg" data-type="image">
+            <div class="media-item-placeholder">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>Drop image: deadlift-pr.jpg</span>
+            </div>
+            <div class="media-caption"><strong>Deadlift PR</strong>500 lbs off the floor</div>
+          </div>
+        </div>
+
+        <!-- Video Embed -->
+        <div class="video-embed">
+          <div class="video-embed-placeholder">
+            <div class="video-embed-placeholder-inner">
+              <div class="video-play-btn">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="var(--bg)" stroke="none"><polygon points="8,5 20,12 8,19"/></svg>
+              </div>
+              <span class="video-embed-label">Embed your competition highlight reel or training montage here</span>
+              <span class="video-embed-label" style="font-size:0.75rem;opacity:0.5">Replace this div with a &lt;video&gt; tag or YouTube/Instagram iframe</span>
+            </div>
+          </div>
+          <div class="video-embed-caption">Competition Highlights &mdash; Watch the full journey from first meet to current PRs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Quote Divider -->
+  <section class="parallax-section">
+    <div class="parallax-bg" style="background: linear-gradient(135deg, var(--bg-deep), rgba(212,175,55,0.05));"></div>
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <p class="parallax-quote">"Strength does not come from physical capacity. It comes from an indomitable will."</p>
+      <span class="parallax-cite">Mahatma Gandhi</span>
+    </div>
+  </section>
+
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
+
+  <!-- Personal Growth Section -->
+  <section class="section" id="growth">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Personal Growth</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="growth-grid">
+        <!-- University Card -->
+        <div class="growth-card growth-card--university">
+          <div class="growth-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 10 3 12 0v-5"/></svg>
+          </div>
+          <h3>University of Houston</h3>
+          <span class="growth-card-tag">Alma Mater</span>
+          <p>
+            The University of Houston is where raw ambition met structure. UH didn't just give me a
+            degree &mdash; it gave me a framework for thinking, a network of driven people, and the
+            confidence to bet on myself.
+          </p>
+          <p>
+            Go Coogs. Once a Cougar, always a Cougar.
+          </p>
+          <div class="growth-card-accent"></div>
+        </div>
+
+        <!-- Mindset Card -->
+        <div class="growth-card">
+          <div class="growth-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"/><line x1="9" y1="21" x2="15" y2="21"/></svg>
+          </div>
+          <h3>Mindset</h3>
+          <span class="growth-card-tag">Philosophy</span>
+          <p>
+            Growth doesn't happen in comfort zones. Every challenge I've faced &mdash; in the gym,
+            in the classroom, in life &mdash; has been an opportunity to become a sharper version
+            of myself.
+          </p>
+        </div>
+
+        <!-- Values Card -->
+        <div class="growth-card">
+          <div class="growth-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Core Values</h3>
+          <span class="growth-card-tag">Foundation</span>
+          <ul class="values-list">
+            <li><strong>Integrity</strong> &mdash; Do what's right when nobody's watching</li>
+            <li><strong>Relentlessness</strong> &mdash; Never settle, never coast</li>
+            <li><strong>Service</strong> &mdash; Lift others as you climb</li>
+            <li><strong>Curiosity</strong> &mdash; Stay hungry, stay learning</li>
+          </ul>
+        </div>
+
+        <!-- Houston Card -->
+        <div class="growth-card">
+          <div class="growth-card-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18M3 7v1a3 3 0 006 0V7m0 1a3 3 0 006 0V7m0 1a3 3 0 006 0V7H3l2-4h14l2 4M5 21V10.87M19 21V10.87"/></svg>
+          </div>
+          <h3>Houston Roots</h3>
+          <span class="growth-card-tag">Origin</span>
+          <p>
+            H-Town shaped my identity. The diversity, the food, the relentless summer heat that
+            builds character whether you want it to or not. Houston taught me that greatness
+            comes from showing up, every single day.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">F.</span>
+          <span class="footer-tagline">fahadnoor.ai</span>
+        </div>
+        <div class="footer-links">
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="https://www.linkedin.com/in/fahadnoormohammed" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Fahad. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
