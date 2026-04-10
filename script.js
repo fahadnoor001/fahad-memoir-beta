@@ -52,8 +52,61 @@ let lastScroll = 0;
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
   nav.classList.toggle('scrolled', scrollY > 60);
+  // FEATURE B: Hide nav on hero, reveal after scroll
+  if (nav.classList.contains('on-hero')) {
+    if (scrollY > 100) {
+      nav.classList.remove('on-hero');
+    }
+  }
   lastScroll = scrollY;
 }, { passive: true });
+
+// FEATURE D: Page transitions with single-word overlay
+(function() {
+  // Word mapping for each page
+  const pageWords = {
+    'index.html': 'Biography',
+    'powerlifting.html': 'Strength',
+    'growth.html': 'Becoming',
+    'contact.html': 'Connect'
+  };
+
+  // Create transition overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'page-transition';
+  overlay.innerHTML = '<span class="page-transition-word"></span>';
+  document.body.appendChild(overlay);
+  const wordEl = overlay.querySelector('.page-transition-word');
+
+  // Intercept nav links to internal pages
+  document.querySelectorAll('a[href$=".html"]').forEach(link => {
+    const href = link.getAttribute('href');
+    // Skip external and email links
+    if (href.startsWith('http') || href.startsWith('mailto:') || link.target === '_blank') return;
+
+    link.addEventListener('click', (e) => {
+      // Only handle same-origin navigation
+      if (e.metaKey || e.ctrlKey || e.shiftKey) return;
+      e.preventDefault();
+
+      const page = href.split('/').pop() || 'index.html';
+      const word = pageWords[page] || 'Fahad';
+      wordEl.textContent = word;
+      overlay.classList.add('active');
+
+      setTimeout(() => {
+        window.location.href = href;
+      }, 700);
+    });
+  });
+
+  // Fade out on page load
+  window.addEventListener('pageshow', (e) => {
+    if (e.persisted || performance.getEntriesByType('navigation')[0]?.type === 'back_forward') {
+      overlay.classList.remove('active');
+    }
+  });
+})();
 
 if (navToggle) {
   navToggle.addEventListener('click', () => {
